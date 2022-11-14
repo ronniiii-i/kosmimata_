@@ -1,0 +1,102 @@
+body{
+    background: url('../img/κοσμήματα.png') no-repeat center;
+    background-size: cover;
+}
+#credpopup{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.582));
+    padding: 2vw;
+    min-height: 100vh;
+}
+#credpopup .content{
+    width: 30%;
+    background-color: white;
+    padding: 1vw;
+    border-radius: 40px;
+    
+}
+#credpopup .content .logo{
+    width: 100%;
+    text-align: center;
+    /* padding-bottom: 1vw; */
+}
+#credpopup .content .logo img{
+    width: 100%;
+    max-width: 150px;
+}
+#credpopup .content .main{
+    text-align: center;
+}
+#credpopup .content .main h2{
+    padding: 1vw;
+    font-size: 150%;
+}
+#credpopup .content .main form{
+    display: flex;
+    flex-direction: column;
+}
+#credpopup .content .main form input{
+    margin: .3vw 0vw;
+}
+#credpopup .content .main form input[type=text],
+#credpopup .content .main form input[type=password],
+#credpopup .content .main form input[type=email]{
+    margin-top: 1vw;
+    padding: .5vw;
+    border: 1px solid grey;
+    border-radius: 5px;
+    /* box-shadow: 0px 0px 3px 0px #808080bf inset;
+    -webkit-box-shadow: 0px 0px 3px 0px #808080bf inset; */
+}
+#credpopup .content .main form .stay{
+    align-self: flex-start;
+    padding: .5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40%;
+}
+#credpopup .content .main form .stay input{
+    width: 20px;
+    height: 20px;
+}
+#credpopup .content .main form .stay input:checked{
+    accent-color: #000000;
+}
+#credpopup .content .main form input[type=submit]{
+    background-color: #000000;
+    border-radius: 10000px;
+    padding: 1vw 2vw;
+    border: none;
+    color: white;
+    font-size: 100%;
+    margin: 2vw 0vw;
+}
+#credpopup .content .main form input[type=submit]:hover{
+    background-color: #000000ee;
+    box-shadow: 0px 0px 3px 0px #000000;
+    -webkit-box-shadow: 0px 0px 3px 0px #000000;
+}
+#credpopup .content .main form a,
+#credpopup .content .main form p{
+    font-size: 80%;
+    color: #000000;
+    padding: .2vw;
+}
+#credpopup .content .main form a:visited{
+    color: #000000;
+}
+#credpopup .content .main form a:hover{
+    color: #777777;
+}
+#credpopup .content .main form p a{
+    font-size: 100%;
+    padding: 0;
+}
+#credpopup .content .main form #tnp{
+    padding: 2vw 0vw;
+}

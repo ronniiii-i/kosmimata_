@@ -1,0 +1,284 @@
+p{
+    font-family: 'Montserrat', sans-serif;
+}
+q{
+    display: block;
+    text-align: center;
+    font-style: italic;
+    color: #96928e;
+    font-family: 'Alegreya', serif;
+    font-size: larger;
+}
+cite{
+    display: block;
+    padding-left: .7vw !important;
+    font-family: 'Alegreya', serif;
+    color: #4e4e4e;
+}
+.pull{
+    text-align: center !important;
+    padding-bottom: 0vw !important;
+}
+cite.pull{
+    font-size: larger;
+}
+blockquote{
+    font-family: 'Alegreya', serif;
+    /* text-indent: 1vw; */
+    padding: 0vw 1vw !important;
+    /* text-align: justify; */
+}
+li{
+    font-family: 'Alegreya', serif;
+    padding: 0 !important;
+}
+img,video,iframe,audio{
+    width: 100%;
+}
+table{
+    width: 70%
+}
+#shopSecion{
+    /* position: fixed; */
+    /* display: none; */
+    top: 5vw;
+    left: 0;
+}
+#sover:hover #shopSecion{
+    /* display: block; */
+    z-index: 2;
+    opacity: 1;
+}
+/* other table formatting here */
+.col{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.col div{
+    padding: 0 !important;
+}
+/* .col.w50-50:first-child,
+.col.w50-50:last-child{
+    width: 50%;
+} */
+.w70-30 section:first-child,
+.w30-70 section:last-child{
+    width: 69%;
+}
+.w70-30 section:last-child,
+.w30-70 section:first-child{
+    width: 29%;
+}
+.w33-33-33 section:nth-child(1),
+.w33-33-33 section:nth-child(2),
+.w33-33-33 section:nth-child(3){
+    text-align: center;
+    width: 33%;
+}
+.w25-50-25 section:nth-child(1),
+.w25-50-25 section:nth-child(3){
+    width: 24%;
+    text-align: center;
+}
+.w25-50-25 section:nth-child(2){
+    width: 50%;
+    text-align: center;
+}
+
+.content.container{
+    border-top: 1px solid #cfc6bc;
+    border-bottom: 1px solid #cfc6bc;
+    background-color: #dbc6b691;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+.content .header{
+    background: url('../img/products/heros/8.png')no-repeat;
+    background-position: left center;
+    background-size: cover;
+    width: 100%;
+    height: 120px;
+    display: flex;
+}
+.content .header h1{
+    font-family: 'Architects Daughter', cursive;
+    font-size: 40px;
+    width: 80%;
+    text-align: center;
+    height: 100%;
+    /* padding: 1vw; */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.content .header p{
+    font-family: 'Alegreya', serif;
+    display: inline-flex;
+    align-items: end;
+    padding: 1vw;
+}
+.content .header p a{
+    font-style: italic;
+}
+.content .header p a:hover{
+    text-decoration: none;
+    color: #ede2d7;
+}
+.content .postContent{
+    width: 80%;
+    background-color: white;
+    padding: 2vw;
+    margin: 3vw auto;
+}
+.content .postContent .top h2{
+    font-size: x-large;
+}
+.content .postContent .top p{
+    color: #96928e;
+    font-weight: 600;
+}
+.content .postContent .top p a{
+    color: #96928e;
+}
+.content .postContent .writeup{
+    padding: 1vw 0vw;
+    color: #555555;
+}
+
+.content .postContent .writeup *{
+    padding: 1vw 0vw;
+    /* width: 100%; */
+}
+.content .navPost{
+    width: 80%;
+    background-color: white;
+    padding: 2vw;
+    margin: 3vw auto;
+    display: flex;
+    justify-content: space-between;
+    /* transform: skewX(20deg); */
+}
+.content .navPost a{
+    display: inline-block;
+    /* width: 13%; */
+}
+.content .navPost a:hover{
+    transform: skewX(10deg);
+    text-decoration: none;
+}
+/* .content .navPost .space{
+    width: 68%;
+}
+.content .navPost .prev{
+    width: fit-content;
+} */
+.content .navPost .next{
+    text-align: right;
+}
+.content .comments{
+    width: 80%;
+    background-color: white;
+    padding: 2vw;
+    margin: 3vw auto;
+    color: #555555;
+}
+.content .comments .posted{
+    padding: 1vw 0vw;
+}
+.content .comments .posted #postedComments{
+    padding: 1vw 0vw;
+}
+.content .comments .posted #postedComments .commentCard{         
+    margin: 3vw auto;
+    width: 90%;
+    box-shadow: 0px 7px 10px 5px #ede2d7;
+    border-radius: 15px;
+    padding: 2vw;
+}
+.content .comments .posted #postedComments .commentCard .postWriteup{
+    width: 85%;
+    /* background-color: white; */
+    padding: 2vw;
+    margin: 2vw auto;
+}
+.content .comments .posted #postedComments .commentCard .reactions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .comments .posted #postedComments .commentCard .reactions i{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .comments .posted #postedComments .commentCard .reactions svg{
+    width: 20px;
+    margin: 0vw 0.5vw;
+}
+.content .comments .add{
+    /* padding: 1vw 0vw; */
+    margin: 3vw auto;
+    width: 90%;
+    /* box-shadow: 0px 7px 10px 5px #ede2d7; */
+    /* border-radius: 15px; */
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content .comments .add h2{
+    font-size: 20px;
+}
+.content .comments .add form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.content .comments .add input{
+    padding: .4vw .5vw;
+}
+.content .comments .add input[name=comment]{
+    width: 70%;
+}
+.content .comments .add input,
+.content .comments .add textarea{
+    display: block;
+    margin-top: 1vw;
+    border: .5px solid #8b8b8b;
+    border-radius: 3px;
+    color: #4e4e4e;
+    font-family: 'Montserrat', sans-serif;
+}
+.content .comments .add input::placeholder,
+.content .comments .add textarea::placeholder{
+    color: #8b8b8b;
+}
+.content .comments .add textarea{
+    padding: 1vw;
+    resize: none;
+    width: 70%;
+}
+.content .comments .add input:focus,
+.content .comments .add input:active,
+.content .comments .add input:visited,
+.content .comments .add textarea:focus,
+.content .comments .add textarea:active,
+.content .comments .add textarea:visited {
+    border: .5px solid #4e4e4e;
+    color: #4e4e4e;
+}
+/* CHANGE AUTOFILL COLOUR */
+.content .comments .add input[type=submit]{
+    padding: 1vw 2vw;
+    border: none;
+    background-color: #cfc6bc;
+    color: white;
+    font-size: 15px;
+}
+.content .comments .add input[type=submit]:hover{
+    background-color: #b8b0a7;
+}

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/992b6cd049.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/css/general.css">
+    <link rel="stylesheet" href="../assets/css/upload.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script defer src="../assets/js/general.js"></script>
+    <script defer src="../assets/js/upload.js"></script>
+    <title>κοσμηματα</title>
+</head>
+<body>
+    <div class="top container">
+        <div id="ham" class="hamburger">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>
+        </div>
+        <div class="logo">
+            <img src="../assets/img/logoclip.png" alt="">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="../pages/index.html">Home</a></li>
+                <li><a id="shop">Shop</a></li>
+                <li><a href="../pages/blog.html">Blog</a></li>
+                <li><a id="search"><i class="fas fa-search"></i></a></li>
+                <li><a id="cart"><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="menuBack">
+        <div id="resMenu">
+            <!-- <div class="widget close">
+                <i id="leaveMenu" class="fas fa-times"></i>
+            </div> -->
+            <div id="leaveMenu">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+            </div>
+            <ul>
+                <li><a href="../pages/index.html">Home</a></li>
+                <li><a id="reshop">Shop</a></li>
+                <li><a href="../pages/blog.html">Blog</a></li>
+            </ul>
+        </div>
+        <div id="reshopSection" class="reshop container">
+            <div class="back">
+                <h3 id="back">&leftarrow;Back</h3>
+            </div>
+            <div class="trending section">
+                <div class="namae">
+                    <h3>Trending</h3>
+                    <div class="pam">
+                        <div class="line line1"></div>
+                        <div class="line line2"></div>
+                    </div>
+                </div>
+                <ul class="shopshow">
+                    <li><a>Holiday</a></li>
+                    <li><a>New Arrivals</a></li>
+                    <li><a>Best Sellers</a></li>
+                    <li><a>Leaving Soon</a></li>
+                </ul>
+            </div>
+            <div class="categories section">
+                <div class="namae">
+                    <h3>Categories</h3>
+                    <div class="pam">
+                        <div class="line line1"></div>
+                        <div class="line line2"></div>
+                    </div>
+                </div>
+                <ul class="shopshow">
+                    <li><a href="../pages/rings.html">Rings</a></li>
+                    <li><a href="../pages/necklaces.html">Necklaces + Pendants</a></li>
+                    <li><a href="../pages/earrings.html">Earrings</a></li>
+                    <li><a href="../pages/bracelets.html">Bracelets + Anklets</a></li>
+                    <li><a href="../pages/wedding.html">Wedding</a></li>
+                    <li><a href="../pages/mens.html">Men's</a></li>
+                </ul>
+            </div>
+            <div class="holiday section">
+                <div class="namae">
+                    <h3>Holiday</h3>
+                    <div class="pam">
+                        <div class="line line1"></div>
+                        <div class="line line2"></div>
+                    </div>
+                </div>
+                <ul class="shopshow">
+                    <li><a>Shop all Gifts</a></li>
+                    <li><a>Most Gifted</a></li>
+                    <li><a>Gifts under $150</a></li>
+                    <li><a>Gifts Under $250</a></li>
+                    <li><a>Gifts Under $500</a></li>
+                    <li><a>Gifts Over $500</a></li>
+                    <li><a>Gifts for Him</a></li>
+                    <li><a>Gift Cards</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="shopSection" class="shop container">
+        <div class="trending section">
+            <h3>Trending</h3>
+            <ul>
+                <li><a>Holiday</a></li>
+                <li><a>New Arrivals</a></li>
+                <li><a>Best Sellers</a></li>
+                <li><a>Leaving Soon</a></li>
+            </ul>
+        </div>
+        <div class="categories section">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="../pages/rings.html">Rings</a></li>
+                <li><a href="../pages/necklaces.html">Necklaces + Pendants</a></li>
+                <li><a href="../pages/earrings.html">Earrings</a></li>
+                <li><a href="../pages/bracelets.html">Bracelets + Anklets</a></li>
+                <li><a href="../pages/wedding.html">Wedding</a></li>
+                <li><a href="../pages/mens.html">Men's</a></li>
+            </ul>
+        </div>
+        <div class="holiday section">
+            <h3>Holiday</h3>
+            <ul>
+                <li><a>Shop all Gifts</a></li>
+                <li><a>Most Gifted</a></li>
+                <li><a>Gifts under $150</a></li>
+                <li><a>Gifts Under $250</a></li>
+                <li><a>Gifts Under $500</a></li>
+                <li><a>Gifts Over $500</a></li>
+                <li><a>Gifts for Him</a></li>
+                <li><a>Gift Cards</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="searchSection" class="search container">
+        <div class="input">
+            <div class="line">
+                <input type="text" placeholder="Find what you're looking for">
+                <i id="remove" class="fas fa-times"></i>
+            </div>
+            <p>search for any product</p>
+        </div>
+        <div class="top">
+            <h3>Top Search</h3>
+            <ul>
+                <li><a href="./product-display-earrings.html#hoops">Hoop Earrings</a></li>
+                <li><a href="./product-display-necklaces-and-pendants.html#necklaces">Diamond Necklace</a></li>
+                <li><a href="./product-display-necklaces-and-pendants.html#zodaic">Zodiac Necklace</a></li>
+                <li><a href="./product-display-bracelets-and-anklets.html#bracelet">Gold Bracelet</a></li>
+                <li><a href="./product-display-necklaces-and-pendants.html#necklaces">Gold Necklace</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="newBody">
+        <div id="cartSection">
+            <div class="widget close">
+                <i id="close" class="fas fa-times"></i>
+            </div>
+            <div class="productDetails">
+                <!-- <div class="productCard">
+                    <div class="image">
+                        <img src="../assets/img/products/earrings/cuffs/duet-cuff/1_DUET_CUFF_V_HERO.jpg" alt="">
+                    </div>
+                    <div class="details">
+                        <div class="top">
+                            <h3>Product Name</h3>
+                            <i id="remove" class="fas fa-times"></i>
+                        </div>
+                        <div class="material">
+                            <p>Product Material and/or Size</p>
+                        </div>
+                        <div class="amApr">
+                            <div class="amount">
+                                <button class="secondary" onclick="reduce()">-</button>
+                                <input type="number" class="pNumber" name="quantity" min="1" max="10" required label="Quantity Input">
+                                <button class="secondary" onclick="increase()">+</button>
+                            </div>
+                            <div>
+                                <p id="prodPrice">$100.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <p id="emptyText"><em>You have no items in your cart</em></p>
+            </div>
+            <div class="checkout">
+                <div class="content">
+                    <h3>Subtotal:</h3>
+                    <p>$0.00</p>
+                </div>
+                <a href="checkout.html">Checkout</a>
+            </div>
+        </div>
+    </div>
+    <div class="content container">
+        <div class="tabs">
+            <p class="tab" id="tab1">Hello</p>
+            <p class="tab" id="tab2">Hello</p>
+            <p class="tab" id="tab3">Hello</p>
+        </div>
+        <form method="post">
+            <div class="screen" id="screen1">
+                <div class="widget">
+                    <h2>Category</h2>
+                </div>
+                <div class="widget">
+                    <input type="radio" name="category" id="" value="Earrings"><label for="">Earrings</label>
+                    <input type="radio" name="category" id="" value="Rings"><label for="">Rings</label>
+                    <input type="radio" name="category" id="" value="Necklaces"><label for="">Necklaces</label>
+                    <input type="radio" name="category" id="" value="Bracelets"><label for="">Bracelets</label>
+                </div>
+                <div class="buttons">
+                    <input type="button" value="Next »" onclick="page2()" disabled>
+                </div>
+            </div>
+            <div class="screen" id="screen2">
+                <div class="widget">
+                    <h2>Type</h2>
+                </div>
+                <div id="earrings" class="widget">
+                    <input type="radio" name="type" id="e1" value="Studs"><label for="e1">Studs</label>
+                    <input type="radio" name="type" id="e2" value="Climbers"><label for="e2">Climbers</label>
+                    <input type="radio" name="type" id="e3" value="Hoops"><label for="e3">Hoops</label>
+                    <input type="radio" name="type" id="e4" value="Drop"><label for="e4">Drop</label>
+                    <input type="radio" name="type" id="e5" value="Cuffs"><label for="e5">Cuffs</label>
+                </div>
+                <div id="rings" class="widget">
+                    <input type="radio" name="type" id="r1" value="Stackable Rings"><label for="r1">Stackable Rings</label>
+                    <input type="radio" name="type" id="r2" value="Statement Rings"><label for="r2">Statement Rings</label>
+                    <input type="radio" name="type" id="r3" value="Pinky Rings"><label for="r3">Pinky Rings</label>
+                    <input type="radio" name="type" id="r4" value="Chain Rings"><label for="r4">Chain Rings</label>
+                    <input type="radio" name="type" id="r5" value="Signet Rings"><label for="r5">Signet Rings</label>
+                    <input type="radio" name="type" id="r6" value="Milestone Rings"><label for="r6">Milestone Rings</label>
+                </div>
+                <div id="necklaces" class="widget">
+                    <input type="radio" name="type" id="n1" value="Necklaces"><label for="n1">Necklaces</label>
+                    <input type="radio" name="type" id="n2" value="Chain"><label for="n2">Chain</label>
+                    <input type="radio" name="type" id="n3" value="Lockets"><label for="n3">Lockets</label>
+                    <input type="radio" name="type" id="n4" value="Pendants"><label for="n4">Pendants</label>
+                    <input type="radio" name="type" id="n5" value="Birthstone Pendants"><label for="n5">Birthstone Pendants</label>
+                    <input type="radio" name="type" id="n6" value="Zodiac Necklaces"><label for="n6">Zodiac Necklaces</label>
+                </div>
+                <div id="bracelets" class="widget">
+                    <input type="radio" name="type" id="b1" value="Bracelets"><label for="b1">Bracelets</label>
+                    <input type="radio" name="type" id="b2" value="Chain Bracelets"><label for="b2">Chain Bracelets</label>
+                    <input type="radio" name="type" id="b3" value="Cuffs and Bangles"><label for="b3">Cuffs and Bangles</label>
+                    <input type="radio" name="type" id="b4" value="Zodiac Bracelets"><label for="b4">Zodiac Bracelets</label>
+                    <input type="radio" name="type" id="b5" value="Men's Bracelets"><label for="b5">Men's Bracelets</label>
+                    <input type="radio" name="type" id="b6" value="Anklets"><label for="b6">Anklets</label>
+                </div>
+                <div id="men" class="widget">
+                    <input type="radio" name="type" id="m1" value="Chains"><label for="m1">Chains</label>
+                    <input type="radio" name="type" id="m2" value="Necklaces"><label for="m2">Necklaces</label>
+                    <input type="radio" name="type" id="m3" value="Bracelets"><label for="m3">Bracelets</label>
+                    <input type="radio" name="type" id="m4" value="Rings"><label for="m4">Rings</label>
+                    <input type="radio" name="type" id="m5" value="Wedding Bands"><label for="m5">Wedding Bands</label>
+                    <input type="radio" name="type" id="m6" value="Small Leather Goods"><label for="m6">Small Leather Goods</label>
+                </div>
+                <div class="buttons">
+                    <a onclick="page1()">« Back</a>
+                    <input type="button" value="Next »" onclick="page3()" disabled>
+                </div>
+            </div>
+            <div class="screen" id="screen3">
+                <div class="widget">
+                    <h2>Details</h2>
+                </div>
+                <div class="widget">
+                    <div class="name">
+                        <label for="prodname">Product Name</label>
+                        <input type="text" name="prodname" id="prodname">
+                    </div>
+                    <div class="image">
+                        <div class="card">
+                            <label for="heroimg">Select Hero Image</label>
+                            <input dropzone="copy" type="file" name="heroimg" id="heroimg" accept="image/*">
+                        </div>
+                        <div class="card">
+                            <label for="secondimg">Select Secondary Image</label>
+                            <input dropzone="copy" type="file" name="secondimg" id="secondimg" accept="image/*">
+                        </div>
+                        <div class="more">
+                            <label for="addquest">Add More?</label>
+                            <input type="checkbox" id="addquest">
+                        </div>
+                        <div class="extra">
+                            <input type="file" accept="image/*" name="otherImgs" dropzone="copy" id="others" multiple maxlength="3">
+                            <p>
+                                <span>Select in order of display.</span>
+                                <span>Maximum is three</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="other">
+                        <div class="styles">
+                            <p>Styles</p>
+                            <select name="styles" id="styles" multiple>
+                                <option value="Gemstone">Gemstone</option>
+                                <option value="Chain">Chain</option>
+                                <option value="Zodaic" opt="all">Zodaic</option>
+                                <option value="Charm/Pendant" opt="both">Charm/Pendant</option>
+                                <option value="Personalizable" opt="both">Personalizable</option>
+                            </select>
+                        </div>
+                        <div class="price" id="ldeet">
+                            <label for="length">Length:</label>
+                            <input type="number" id="length" min="1" name="length" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="price">
+                        <label for="price">Price($):</label>
+                        <input type="number" id="price" min="1" name="price" autocomplete="off">
+                    </div>
+                </div>
+                <div class="buttons">
+                    <a onclick="page2()">« Back</a>
+                    <input type="button" value="Next »" onclick="page4()" disabled>  
+                </div>
+            </div>
+            <div class="screen" id="screen4">
+                <div class="widget">
+                    <h2>Material(s) used:</h2>
+                </div>
+                <div class="widget">
+                    <div class="main">
+                        <h4>Main Materials</h4>
+                        <div class="materials">
+                            <input type="radio" name="mainMaterial" id="m1" value="Gold Vermiel"><label for="m1">Gold Vermiel</label>
+                            <input type="radio" name="mainMaterial" id="m2" value="14k Yellow Gold"><label for="m2">14k Yellow Gold</label>
+                            <input type="radio" name="mainMaterial" id="m3" value="14k White Gold"><label for="m3">14k White Gold</label>
+                            <input type="radio" name="mainMaterial" id="m4" value="Sterling Silver"><label for="m4">Sterling Silver</label>
+                        </div>
+                    </div>
+                    <div class="secondary">
+                        <h4>Secondary Materials</h4>
+                        <div class="materials">
+                            <input type="checkbox" name="materials" id="m5" value="Diamond">
+                            <label for="m5">Diamond</label>
+                            <input type="checkbox" name="materials" id="m6" value="Opal">
+                            <label for="m6">Opal</label>
+                            <input type="checkbox" name="materials" id="m7" value="White Sapphire">
+                            <label for="m7">White Sapphire</label>
+                            <input type="checkbox" name="materials" id="m8" value="Pearl">
+                            <label for="m8">Pearl</label>
+                            <input type="checkbox" name="materials" id="m9" value="Citrine">
+                            <label for="m9">Citrine</label>
+                            <input type="checkbox" name="materials" id="m10" value="Topaz">
+                            <label for="m10">Topaz</label>
+                            <input type="checkbox" name="materials" id="m11" value="Blue Topaz">
+                            <label for="m11">Blue Topaz</label>
+                            <input type="checkbox" name="materials" id="m12" value="London Blue Topaz">
+                            <label for="m12">London Blue Topaz</label>
+                            <input type="checkbox" name="materials" id="m13" value="White Topaz">
+                            <label for="m13">White Topaz</label>
+                            <input type="checkbox" name="materials" id="m14" value="Blue Sapphire">
+                            <label for="m14">Blue Sapphire</label>
+                            <input type="checkbox" name="materials" id="m15" value="Quartz">
+                            <label for="m15">Quartz</label>
+                            <input type="checkbox" name="materials" id="m16" value="Rose Quartz">
+                            <label for="m16">Rose Quartz</label>
+                            <input type="checkbox" name="materials" id="m17" value="Honey Quartz">
+                            <label for="m17">Honey Quartz</label>
+                            <input type="checkbox" name="materials" id="m18" value="Aquamarine">
+                            <label for="m18">Aquamarine</label>
+                            <input type="checkbox" name="materials" id="m19" value="Garnet">
+                            <label for="m19">Garnet</label>
+                            <input type="checkbox" name="materials" id="m20" value="Amethyst">
+                            <label for="m20">Amethyst</label>
+                            <input type="checkbox" name="materials" id="m21" value="Emerald">
+                            <label for="m21">Emerald</label>
+                            <input type="checkbox" name="materials" id="m22" value="Ruby">
+                            <label for="m22">Ruby</label>
+                            <input type="checkbox" name="materials" id="m23" value="Peridot">
+                            <label for="m23">Peridot</label>
+                            <input type="checkbox" name="materials" id="m24" value="Moonstone">
+                            <label for="m24">Moonstone</label>
+                            <input type="checkbox" name="materials" id="m25" value="Green Malachite">
+                            <label for="m25">Green Malachite</label>
+                            <input type="checkbox" name="materials" id="m26" value="Brown Enamel">
+                            <label for="m26">Brown Enamel</label>
+                            <input type="checkbox" name="materials" id="m27" value="Navy Enamel">
+                            <label for="m27">Navy Enamel</label>
+                            <input type="checkbox" name="materials" id="m28" value="Black Resin">
+                            <label for="m28">Black Resin</label>
+                            <input type="checkbox" name="materials" id="m29" value="Blue Resin">
+                            <label for="m29">Blue Resin</label>
+                            <input type="checkbox" name="materials" id="m30" value="Green Resin">
+                            <label for="m30">Green Resin</label>
+                            <input type="checkbox" name="materials" id="m31" value="Orange Resin">
+                            <label for="m31">Orange Resin</label>
+                            <input type="checkbox" name="materials" id="m32" value="Tsavorite">
+                            <label for="m32">Tsavorite</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons">
+                <a onclick="page3()">« Back</a>
+                <input type="button" value="Preview" onclick="showDeets()" disabled>
+                </div>
+            </div>
+        </form>
+        <div id="preview">
+            <div class="deets">
+                <div id="closePrev" onclick="closeDeets()">
+                    <div class="line line1"></div>
+                    <div class="line line2"></div>
+                </div>
+                <h2 id="pName"></h2>
+                <h3 id="pCat"></h3>
+                <p id="pType"></p>
+                <p>$<span id="pPrice"></span></p>
+                <p id="pMainMaterial"></p>
+                <p id="pOtherMaterials"></p>
+                <p id="pStyles"></p>
+                <p id="pLength"></p>
+                <h2>Images</h2>
+                <div class="images">
+                    <img id="pri" src="../assets/img/products/rings/duo-ring/Duo_ring_yg_hero0861.jpg" alt="">
+                    <img id="sec" src="../assets/img/products/rings/duo-ring/Duo_ring_yg_hero0861.jpg" alt="">
+                </div>
+
+            
+                <button onclick="addToDb()">Upload</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer container">
+        <div class="top">
+            <div class="site column">
+                <div class="logo">
+                    <img src="../assets/img/logoclip.png" alt="">
+                </div>
+                <p>Accessorise yourself with the best there is</p>
+            </div>
+            <div class="customer column">
+                <h1>Customer Care</h1>
+                <ul>
+                    <li><a href="./faq.html#shipping">Shipping & Returns</a></li>
+                    <li><a href="./order-status.html">Order Status</a></li>
+                    <li><a href="./faq.html#payment">Payment Methods</a></li>
+                    <li><a href="./ring-sizer.html">Ring Sizer</a></li>
+                </ul>
+            </div>
+            <div class="contact column">
+                <div class="address">
+                    <h1>Visit</h1>
+                    <p>1985 Bel Meadow Drive,</p>
+                    <p>Los Angeles, California</p>
+                    <p>90017</p>
+                </div>
+                <div class="email">
+                    <a href="mailto:info@kosmimata.com">info@kosmimata.com</a>
+                    <a href="tel:+1 213-829-0743">213-829-0743</a>
+                </div>
+            </div>
+            <div class="sign column">
+                <p>Sign up to have insider info on new arrivals, early access and more.</p>
+                <div class="input">
+                    <i class="far fa-envelope"></i>
+                    <input type="email" placeholder="Your Email">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="socials">
+                <a href="./terms&conditions.html">Terms and Conditions</a>
+                <a href="./privacy-policy.html">Privacy Policy</a>
+                <a href="./sitemap.html">Site Map</a>
+                <p>&copy;Kosmimata Inc.</p>
+                <div class="icons">
+                    <a href=""><i class="fab fa-instagram"></i></a><a href=""><i class="fab fa-pinterest"></i></a><a href=""><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

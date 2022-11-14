@@ -1,0 +1,52 @@
+.content.container{
+    border-top: 1px solid #cfc6bc;
+    border-bottom: 1px solid #cfc6bc;
+    background-color: #dbc6b691;
+}
+.content .header{
+    background: url('../img/products/heros/8.png')no-repeat;
+    background-position: left center;
+    background-size: cover;
+    width: 100%;
+    height: 150px;
+}
+.content .header h1{
+    font-family: 'Architects Daughter', cursive;
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.content .cards{
+    margin: 2vw 2vw;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.content .cards .card{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    min-width: 25%;
+    padding: 1vw;
+}
+.content .cards .card .img{
+    overflow: hidden;
+    text-align: center;
+    min-width: 100%;
+    min-height: 22vw;
+}
+.content .cards .card .img img{
+    width: 100%;
+    transition: 1s all;
+}
+.content .cards .card .img:hover img{
+    width: 95%;
+}
+.content .cards .card .title a:hover h3{
+    color: #918981;
+    text-decoration: underline;
+}

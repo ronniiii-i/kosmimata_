@@ -1,0 +1,150 @@
+.content.container{
+    padding-bottom: 5vw;
+}
+.content .hero{
+    background: linear-gradient(#00000027, #0000002a), url('../img/products/heros/11.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content .hero h1{
+    font-size: 40px;
+    font-family: 'Architects Daughter', cursive;
+    color: white;
+    visibility: hidden;
+}
+.content .hero h3{
+    font-size: 25px;
+    color: white;
+    font-family: 'Alegreya', sans-serif;
+    font-weight: 400;
+    visibility: hidden;
+}
+.content .questions{
+    display: flex;
+    width: 60%;
+    padding: 1vw;
+    margin: 5vw auto 0;
+    border: 1px solid silver;
+    box-shadow: 0px 0px 15px 1px #b4b4b4;
+    position: relative;
+    top: 1vw;
+}
+.content .questions .topic{
+    width: 25%;
+    padding: 1vw;
+    position: sticky;
+    top: 0vw;
+    left: 2vw;
+    height: fit-content;
+}
+.content .questions .topic a{
+    display: block;
+    width: 100%;
+    padding: 1vw;
+    border-bottom: 1px solid silver;
+}
+.content .questions .topic a:hover,
+.content .questions .topic a:active,
+.content .questions .topic a:focus{
+    background-color: black;
+    color: white;
+}
+a:hover{
+    text-decoration: none;
+}
+.content .questions .view{
+    width: 75%;
+    padding: 1vw;
+}
+.content .questions .view .answers{
+    display: none;
+}
+.content .questions .view .answers.show{
+    display: block;
+}
+.content .questions .view .answers .row{
+    padding: 1vw;
+}
+.content .questions .view .answers .row *{
+    font-family: 'Alegreya', serif;
+}
+.content .questions .view .answers .row .name{
+    padding-bottom: 1vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .questions .view .answers .row .name a{
+    font-weight: 500;
+    font-size: 18px;
+}
+.content .questions .view .answers .row .name i.fa-chevron-down{
+    display: none;
+}
+.viewr{
+    display: none;
+}
+.content .questions .view .answers .row .name i.fa-chevron-down.viewd{
+    display: block;
+}
+.content .questions .view .answers .row .answer{
+    display: none;
+}
+.content .questions .view .answers .row .answer.show{
+    display: block;
+}
+.content .questions .view .answers .row .answer *{
+    font-size: 15px;
+    font-family: 'Alegreya', serif;
+}
+.content .questions .view .answers .row .answer p,
+.content .questions .view .answers .row .answer li{
+    padding: .2vw 1vw;
+}
+.content .questions .view .answers .row .answer li::marker{
+    position: absolute;
+    left: 2vw;
+    top: 0;
+    font-variant-numeric: oldstyle-nums;
+}
+.content .questions .view .answers .row .answer a,
+.content .questions .view .answers .row .answer span {
+    text-decoration: underline;
+}
+.content .questions .view .answers .row .answer ol{
+    list-style-type: decimal;
+    padding: 0vw 1vw;
+    max-height: 200px;
+    overflow-y: auto;
+}
+.content .questions .view .answers .row .answer ul{
+    list-style-type: disc;
+    padding: 0vw 1vw;
+    max-height: 200px;
+    overflow-y: auto;
+}
+.content .questions .view .answers .row .answer table{
+    width: 100%;
+    margin: auto;
+    border-collapse: collapse;
+    border: 1px solid silver;
+}
+.content .questions .view .answers .row .answer table th{
+    background-color: #f2f2f2;
+    border: 1px solid silver;
+    padding: .3vw;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.content .questions .view .answers .row .answer table td{
+    border: 1px solid silver;
+    padding: .3vw;
+}
+.content .questions .view .answers .row .answer strong{
+    font-family: 'Alegreya Sans', sans-serif;
+}

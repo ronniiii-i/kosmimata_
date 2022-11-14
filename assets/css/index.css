@@ -1,0 +1,550 @@
+h1{
+    font-family: Architects Daughter;
+    font-size: 150%;
+}
+.hero.container{
+    min-height: 70vh;
+    background: linear-gradient(#0000001c, #0000001c), url('../img/products/heros/2.jpeg') no-repeat fixed;
+    background-position: center top;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 3vw;
+}
+.hero .text{
+    width: 45%;
+    padding: 3vw;
+    color: white;
+    text-align: center;
+}
+.hero .text h1{
+    font-size: 200%;
+    text-transform: uppercase;
+}
+.hero .text p{
+    font-family: 'Alegreya', serif;
+}
+.hero .text .but{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero .text .but a{
+    font-family: 'Architects Daughter', cursive;
+    padding: 1vw 2vw;
+    margin: 1vw .5vw;
+    color: white;
+    border: 2px solid white;
+}
+.hero .text .but a:hover{
+    background-color: white;
+    color: #9c8779;
+    text-decoration: none;
+}
+.category.container,
+.bestsellers.container{
+    width: 100%;
+    padding: 3vw;
+}
+
+.category h1{
+    font-family: 'Architects Daughter', cursive;
+    padding: 0vw 2vw;
+}
+.category .categories{
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+.category .categories::-webkit-scrollbar {
+    display: none;
+}
+.category .categories {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.category .categories .slide{
+    width: 30%;
+    padding: 2vw;
+    flex-shrink: 0;
+    height: 100%;
+}
+.category .categories .slide a{
+    width: 100%;
+    overflow: hidden;
+}
+.category .categories .slide a img{
+    width: 100%;
+}
+.blog.container{
+    background-color: white;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.blog .h{
+    width: 100%;
+    text-align: center;
+}
+.blog .h h3{
+    font-family: 'Architects Daughter', cursive;
+    font-weight: 400;
+    font-size: 25px;
+}
+.blog .h h2{
+    font-family: 'Alegreya', serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+.blog .categories{
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+.blog .categories::-webkit-scrollbar {
+    display: none;
+}
+.categories {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.blog .categories .slide{
+    width: 30%;
+    padding: 2vw;
+    flex-shrink: 0;
+    height: 100%;
+}
+.blog .categories .slide a{
+    width: 100%;
+    overflow: hidden;
+}
+.blog .categories .slide a img{
+    width: 100%;
+}
+.bestsellers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.bestsellers .widget{
+    text-align: center;
+}
+.bestsellers .widget a{
+    padding: .5vw 1vw;
+}
+.bestsellers .widget a:hover{
+    color: #ffb1b1;
+}
+.bestsellers .cards {
+    width: 100%;
+    /* -ms-overflow-style: none;  /* IE and Edge */
+    /*scrollbar-width: none;  Firefox */
+}
+.bestsellers .cards .name{
+    width: 100%;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    display: none;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.bestsellers .cards .name::-webkit-scrollbar {
+    display: none;
+}
+.bestsellers .cards .rings{
+    display: flex;
+}
+.bestsellers .cards .name .card{
+    position: relative;
+    width: 30%;
+    padding: 1vw;
+    margin: 1vw;
+    height: 100%;
+    min-height: 23vw;
+}
+.bestsellers .cards .name .card .imgs{
+    width: 100%;
+    display: block;
+    min-height: 22vw;
+    /* position: relative; */
+}
+.bestsellers .cards .name .imgs img{
+    width: 100%;
+    position: absolute;
+    top: 1vw;
+    left: 1vw;
+}
+.bestsellers .cards .name .imgs .primary{
+    z-index: 1;
+}
+.bestsellers .cards .name .imgs:hover .primary{
+    opacity: 0;
+}
+.about.container{
+    min-height: 70vh;
+    background: linear-gradient(#0000001c, #0000001c), url('../img/products/heros/bracehero.jpg') no-repeat fixed;
+    background-position: center top;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 3vw;
+}
+.about .text{
+    width: 45%;
+    padding: 3vw;
+    color: white;
+    text-align: center;
+}
+.about .text .widget{
+    padding: 1vw;
+}
+.about .text h1{
+    font-size: 200%;
+    text-transform: uppercase;
+}
+.about .text p{
+    font-family: 'Alegreya', serif;
+}
+.about .text a{
+    font-family: 'Architects Daughter', cursive;
+    padding: 1vw 2vw;
+    margin: 1vw .5vw;
+    color: white;
+    border: 2px solid white;
+}
+.about .text a:hover{
+    background-color: white;
+    color: #9c8779;
+    text-decoration: none;
+}
+.category .cards {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.category .cards::-webkit-scrollbar {
+    display: none;
+}
+.category .cards .slide{
+    width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    /* display: none; */
+}
+/* .category .cards .slide-1:first-child{
+    margin-left: 0;
+} */
+.category .cards .slide .card{
+    position: relative;
+    width: 30%;
+    padding: 1vw;
+    margin: 1vw;
+    min-height: 23vw;
+}
+.category .cards .slide .card .imgs{
+    width: 100%;
+    display: block;
+    min-height: 22vw;
+    /* position: relative; */
+}
+.category .cards .slide .imgs img{
+    width: 100%;
+    position: absolute;
+    top: 1vw;
+    left: 1vw;
+}
+.category .cards .slide .imgs .primary{
+    z-index: 1;
+}
+.category .cards .slide .imgs:hover .primary{
+    opacity: 0;
+}
+.category .a{
+    text-align: center;
+    padding: 1vw;
+}
+.category .a a{
+    font-family: 'Architects Daughter', cursive;
+    padding: 1vw 2vw;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+.category .a a:hover{
+    background-color: white;
+    color: #9c8779;
+    text-decoration: none;
+}
+/* color: #ede2d7; */
+.test.container{
+    background-color: white;
+}
+.slider{
+	overflow: hidden;
+}
+.slider > ul {
+	height: 100%;
+	z-index: 100;
+}
+.slider > ul > li{
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+ 
+	opacity: 0;
+	z-index: 1;	
+  	transition: all 2000ms ease;
+}
+.slider > #input-slide-0:checked ~ ul > li.slide-0,
+.slider > #input-slide-1:checked ~ ul > li.slide-1,
+.slider > #input-slide-2:checked ~ ul > li.slide-2,
+.slider > #input-slide-3:checked ~ ul > li.slide-3{
+	opacity: 1;
+	z-index: 2;
+}
+.slider > ul > li.slide-0{
+	background-color: #000000;
+	background-image: url("07.png");
+}
+.slider > ul > li.slide-1{
+	background-color: #000000;
+	background-image: url("07.png");
+}
+.slider > ul > li.slide-2{
+	background-color: #000000;
+	background-image: url("07.png");
+}
+.slider > ul > li.slide-3{
+	background-color: #000000;
+	background-image: url("07.png");
+}
+ 
+.slider > .slider-arrow-prev,
+.slider > .slider-arrow-next {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	z-index: 300;
+}
+.slider > .slider-arrow-prev > label,
+.slider > .slider-arrow-next > label {
+	position: absolute;
+	width: 5vw;
+	height: 5vw;
+	margin-top: -2.5vw;
+	opacity: 0;
+	background-size: 100% auto;
+	background-position: center;
+ 
+	z-index: -1;
+  	transition: all 0.5s ease;
+}
+.slider > #input-slide-0:checked ~ .slider-arrow-prev > label.slide-3,
+.slider > #input-slide-0:checked ~ .slider-arrow-next > label.slide-1, 
+.slider > #input-slide-1:checked ~ .slider-arrow-prev > label.slide-0,
+.slider > #input-slide-1:checked ~ .slider-arrow-next > label.slide-2, 
+.slider > #input-slide-2:checked ~ .slider-arrow-prev > label.slide-1,
+.slider > #input-slide-2:checked ~ .slider-arrow-next > label.slide-3, 
+.slider > #input-slide-3:checked ~ .slider-arrow-prev > label.slide-2,
+.slider > #input-slide-3:checked ~ .slider-arrow-next > label.slide-0 {
+	z-index: 1;
+}
+ 
+.slider > .slider-dot {
+	/* position: relative;
+	margin-top: -4vw; */
+	text-align: center;
+	/* z-index: 300; */
+	font-size: 0;
+}
+.slider > .slider-dot > label {
+	/* position: relative; */
+	display: inline-block;
+	margin: 1vw 0.5vw;
+	width: 1vw;
+	height: 1vw;
+	border-radius: 50%;
+ 
+	background-color: #ede2d7;
+}
+.slider > #input-slide-0:checked ~ .slider-dot > label.slide-0,
+.slider > #input-slide-1:checked ~ .slider-dot > label.slide-1,
+.slider > #input-slide-2:checked ~ .slider-dot > label.slide-2,
+.slider > #input-slide-3:checked ~ .slider-dot > label.slide-3 {
+	background-color: black;
+}
+.slider > .slider-dot > label:hover{
+	background-color: #ffb1b1b1 !important;
+}
+.slider > .slide-description{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 25vw;
+    /* padding: 5vw 5vw; */
+}
+.slider > .slide-description > label{
+	position: absolute;
+	width: 100%;
+    cursor: default;
+    text-align: center;
+	z-index: 0;
+	opacity: 0;
+	visibility: hidden;
+  	transition: all 0.75s ease;	
+}
+.slider > #input-slide-0:checked ~ .slide-description > .slide-0,
+.slider > #input-slide-1:checked ~ .slide-description > .slide-1,
+.slider > #input-slide-2:checked ~ .slide-description > .slide-2,
+.slider > #input-slide-3:checked ~ .slide-description > .slide-3{
+	z-index: 2;
+	opacity: 1;
+	visibility: visible;	
+}
+.slider > .slide-description > label > .text-slide{
+    font-family: 'Alegreya', serif;
+	margin: 0 auto;
+	line-height: 2.7vw;
+    padding: 1vw;
+	text-align: center;
+    width: 50%;
+    font-size: 110%;
+    font-weight: 400;
+}
+.slider > .slide-description > label > em{
+    font-family: 'Architects Daughter', cursive;
+}
+ 
+ 
+ 
+@keyframes slide{
+	0%, 100% { opacity: 0; }
+	6%, 25% { opacity: 1; z-index: 2; }
+	30%, 50% { opacity: 0; z-index: 2; }
+}
+.slider > #input-slide-autoplay:checked ~ ul > li.slide-0{
+	animation: slide 32000ms infinite -2000ms linear;
+}
+.slider > #input-slide-autoplay:checked ~ ul > li.slide-1{
+	animation: slide 32000ms infinite 6000ms linear;	
+}
+.slider > #input-slide-autoplay:checked ~ ul > li.slide-2{
+	animation: slide 32000ms infinite 14000ms linear;	
+}
+.slider > #input-slide-autoplay:checked ~ ul > li.slide-3{
+	animation: slide 32000ms infinite 22000ms linear;	
+}
+.slider > #input-slide-autoplay:checked ~ ul > li{
+	transition: none;	
+}
+ 
+ 
+@keyframes arrow {
+	0%, 24% { z-index: 1; }
+	25%, 100% { z-index: -1; }
+}
+.slider > #input-slide-autoplay:checked ~ .slider-arrow-prev > label.slide-3,
+.slider > #input-slide-autoplay:checked ~ .slider-arrow-next > label.slide-1{
+	animation: arrow 32000ms infinite -2000ms;	
+}
+.slider > #input-slide-autoplay:checked ~ .slider-arrow-prev > label.slide-0,
+.slider > #input-slide-autoplay:checked ~ .slider-arrow-next > label.slide-2{
+	animation: arrow 32000ms infinite 6000ms;	
+}
+.slider > #input-slide-autoplay:checked ~ .slider-arrow-prev > label.slide-1,
+.slider > #input-slide-autoplay:checked ~ .slider-arrow-next > label.slide-3{
+	animation: arrow 32000ms infinite 14000ms;	
+}
+.slider > #input-slide-autoplay:checked ~ .slider-arrow-prev > label.slide-2,
+.slider > #input-slide-autoplay:checked ~ .slider-arrow-next > label.slide-0{
+	animation: arrow 32000ms infinite 22000ms;	
+}
+ 
+ 
+@keyframes dot {
+	0%, 24%	{ background-color: #333; }
+	25%, 100% { background: #ede2d7; }
+}
+.slider > #input-slide-autoplay:checked ~ .slider-dot > label.slide-0{
+	animation: dot 32000ms infinite -2000ms;	
+}
+.slider > #input-slide-autoplay:checked ~ .slider-dot > label.slide-1{
+	animation: dot 32000ms infinite 6000ms;	
+}
+.slider > #input-slide-autoplay:checked ~ .slider-dot > label.slide-2{
+	animation: dot 32000ms infinite 14000ms;	
+}
+.slider > #input-slide-autoplay:checked ~ .slider-dot > label.slide-3{
+	animation: dot 32000ms infinite 22000ms;	
+}
+ 
+ 
+@keyframes description{
+	0%, 5% { opacity: 0; z-index: 2; visibility: visible; }
+	6%, 24% { opacity: 1; z-index: 2; visibility: visible; }
+	25%, 100% { opacity: 0; z-index: 0; visibility: hidden; }
+}
+.slider > #input-slide-autoplay:checked ~ .slide-description > .slide-0{
+	animation: description 32000ms infinite -2000ms ease;
+}
+.slider > #input-slide-autoplay:checked ~ .slide-description > .slide-1{
+	animation: description 32000ms infinite 6000ms ease;
+}
+.slider > #input-slide-autoplay:checked ~ .slide-description > .slide-2{
+	animation: description 32000ms infinite 14000ms ease;
+}
+.slider > #input-slide-autoplay:checked ~ .slide-description > .slide-3{
+	animation: description 32000ms infinite 22000ms ease;
+}
+.slider > #input-slide-autoplay:checked ~ .slide-description > label{
+  	transition: none;  	
+}
+
+@media screen and (min-height: 800px) {
+    .hero.container,
+    .about.container{
+        min-height: 40vh;
+        background-size: initial;
+    }
+    .about.container{
+        background-size: 200%;
+        background-position: center
+    }
+}
+@media screen and (max-width: 900px) {
+    .hero .text,
+    .about .text{
+        width: 50%;
+    }
+    .bestsellers .cards .name .card{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 860px) {
+    .hero .text,
+    .about .text{
+        width: 100%;
+    }
+    .slider .slide-description{
+        min-height: 30vw;
+    }
+}

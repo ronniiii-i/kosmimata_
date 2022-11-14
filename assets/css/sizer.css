@@ -1,0 +1,116 @@
+.content .hero{
+    background: linear-gradient(#00000027, #0000002a), url('../img/products/heros/10.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content .hero h1{
+    font-size: 40px;
+    font-family: 'Architects Daughter', cursive;
+    color: white;
+}
+.content .hero h3{
+    font-size: 25px;
+    color: white;
+    font-family: 'Alegreya', sans-serif;
+    font-weight: 400;
+}
+.content .ways{
+    display: flex;
+    flex-direction: column;
+}
+.content .ways .row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
+}
+.content .ways .row .img{
+    width: 40%;
+    padding: 1vw;
+    text-align: center;
+}
+.content .ways .row .img iframe{
+    width: 100%;
+}
+.content .ways .row .img img{
+    width: 100%;
+    /* max-width: 500px; */
+}
+.content .ways .row .text{
+    width: 50%;
+    padding: 3vw;
+}
+.content .ways .row .text *{
+    padding: 1vw;
+}
+.content .ways .row .text img{
+    width: 100%;
+    max-width: 80px;
+}
+.content .ways .row .text h3{
+    font-size: 20px;
+    font-family: 'Architects Daughter', cursive;
+}
+.content .ways .row .text li{
+    list-style: decimal;
+    padding: .5vw;
+    font-family: 'Alegreya', serif;
+}
+.content .ways .row .text p{
+    font-family: 'Alegreya', serif;
+    /* padding: 1vw; */
+    margin-bottom: 2vw;
+}
+.content .ways .row .text a{
+    font-family: 'Architects Daughter', cursive;
+    color: white;
+    background-color: black;
+    padding: 1vw 2vw;
+    margin: 2vw 1vw;
+}
+.content .ways .table{
+    width: 100%;
+    padding: 1vw;
+    display: flex;
+    justify-content: center;
+}
+.content .ways .table table{
+    width: 85%;
+    text-align: center;
+    border-spacing: 0px;
+}
+.content .ways .table table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+.content .ways .table table tr td{
+   padding: 1vw;
+   font-family: 'Alegreya', serif;
+}
+.content .tips{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5vw;
+    background-color: white;
+}
+.content .tips h3{
+    font-size: 20px;
+    font-family: 'Architects Daughter', cursive;
+    padding: 1vw;
+}
+.content .tips ul{
+    width: 50%;
+}
+.content .tips li{
+    list-style: disc;
+    padding: .5vw;
+    font-family: 'Alegreya', serif;
+}

@@ -1,0 +1,114 @@
+.content.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content h2{
+    font-size: 45px;
+    font-family: 'Architects Daughter', cursive;
+    text-align: center;
+    padding: 3vw;
+}
+.content hr{
+    width: 95%;
+    border: none;
+    border-top: 1px solid #cbc6bc;
+}
+.content .display{
+    display: flex;
+    width: 100%;
+    margin-top: 1vw;
+    position: relative;
+}
+.content .display .sidebar{
+    width: 20%;
+    /* background-color: aqua; */
+    position: sticky;
+    top:0;
+    left:0;
+    height: fit-content;
+    padding: 2vw;
+}
+.content .display .sidebar p,
+.content .display .sidebar p ~ div{
+    padding: 1vw;
+    border-bottom: 1px solid black;
+}
+.content .display .sidebar div{
+    cursor: pointer;
+}
+.content .display .sidebar div a:hover{
+    text-decoration: none;
+}
+.content .display .sidebar div div.name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .display .sidebar div div.name i.fa-chevron-down{
+    display: none;
+}
+.viewr{
+    display: none;
+}
+
+.content .display .sidebar div div.name i.fa-chevron-down.viewd{
+    display: block;
+}
+.content .display .sidebar div .sub{
+    /* background-color: aliceblue; */
+    display: none;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 1vw;
+    max-height: 150px;
+    overflow: auto;
+}
+.content .display .sidebar div .sub.show{
+    display: flex;
+}
+.content .display .sidebar div > div input{
+    width: 10%;
+}
+.content .display .sidebar div > div label{
+    width: 90%;
+}
+.content .display .products{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+.content .display .products .card{
+    width: 33%;
+    padding: 1vw;
+    min-height: 30vw;
+}
+.content .display .products .card .img{
+    position: relative;
+    min-height: 25vw;
+}
+.content .display .products .card .img img{
+    position: absolute;
+    width: 100%;
+}
+.content .display .products .card .img .primary{
+    z-index: 1;
+}
+.content .display .products .card .img:hover .primary{
+    opacity: 0;
+}
+.content .display .products .card .naApr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .display .products .card .naApr *{
+    font-family: 'Alegreya', sans-serif;
+    font-size: 17px;
+}
+.content .display .products .card .naApr .name{
+    font-weight: 500;
+}
+.content .display .products .card .naApr .name:hover{
+    text-decoration: underline;
+}
